@@ -1,0 +1,24 @@
+{
+  "sample_input": "My email is dev@example.com and my key is sk-abc123XYZ password=secret123",
+  "redacted_output": "My email is [REDACTED_EMAIL] and my key is [REDACTED_API_KEY] [REDACTED_PASSWORD]",
+  "report": {
+    "redactions": [
+      {
+        "type": "email",
+        "count": 1,
+        "replaced_with": "[REDACTED_EMAIL]"
+      },
+      {
+        "type": "api_key",
+        "count": 1,
+        "replaced_with": "[REDACTED_API_KEY]"
+      },
+      {
+        "type": "password",
+        "count": 1,
+        "replaced_with": "[REDACTED_PASSWORD]"
+      }
+    ],
+    "clean": false
+  }
+}
